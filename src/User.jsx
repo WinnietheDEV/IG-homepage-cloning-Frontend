@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import image from "../public/unnamed.png";
+import image from "../public/cat2.png";
 import { useGlobalContext } from "./context";
 const User = () => {
   // const [images, setImages] = useState([]);
