@@ -19,7 +19,7 @@ const Upload = () => {
             const product = { name: captionValue, image };
 
             await axios.post(
-              `http://localhost:3000/api/v1/profile/image`,
+              `https://ig-homepage-backend.onrender.com/api/v1/profile/image`,
               product
             );
             getHome();
@@ -48,7 +48,7 @@ const Upload = () => {
                   image: { src },
                 },
               } = await axios.post(
-                `http://localhost:3000/api/v1/profile/image/upload`,
+                `https://ig-homepage-backend.onrender.com/api/v1/profile/image/upload`,
                 formData,
                 {
                   headers: {
