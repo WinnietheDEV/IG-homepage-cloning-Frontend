@@ -10,7 +10,7 @@ const AppContext = ({ children }) => {
   const [upload, setUpload] = useState(false);
   const getHome = async () => {
     const resp = await axios(
-      "https://ig-homepage-frontend.onrender.com/api/v1/profile/image"
+      "https://ig-homepage-backend.onrender.com/api/v1/profile/image"
     );
     console.log(resp.data.images);
     setImages(resp.data.images);
