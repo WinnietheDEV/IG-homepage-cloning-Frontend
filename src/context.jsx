@@ -9,7 +9,9 @@ const AppContext = ({ children }) => {
   const [name, setName] = useState("win");
   const [upload, setUpload] = useState(false);
   const getHome = async () => {
-    const resp = await axios("http://localhost:3000/api/v1/profile/image");
+    const resp = await axios(
+      "https://ig-homepage-frontend.onrender.com/api/v1/profile/image"
+    );
     console.log(resp.data.images);
     setImages(resp.data.images);
   };
